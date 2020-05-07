@@ -27,7 +27,7 @@ class MyWindow(Ui_MainWindow,QMainWindow):
         super(MyWindow, self).__init__(parent)
         #获取根目录
         self.root_path =mod_get_rootPath.get_root_path()
-
+        print(self.root_path)
         # 连接数据库
         self.sqldb = mod_mysql_tool.MySqlTools()
         self.sqldb.connect()

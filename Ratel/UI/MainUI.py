@@ -13,16 +13,18 @@ from PyQt5.Qt import *
 import logging
 import customWidget
 
+from modules.mod_get_rootPath import get_root_path
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
-        logging
+        self.root_path =get_root_path()
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(1101, 755)
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
 
         #设置左边布局
-        with open('./QSS/tabStyle.qss','r',encoding='utf-8') as f:
+        with open(self.root_path+'/UI/QSS/tabStyle.qss','r',encoding='utf-8') as f:
             self.tabStyle =f.read()
             f.close()
 
