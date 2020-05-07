@@ -1,0 +1,11 @@
+
+
+QTabWidget#MaintabWidget QTabBar::tab
+{
+	font-size:20px;
+}
+
+QTabWidget#MaintabWidget QTabBar
+{
+	font-size: 20px;
+}
