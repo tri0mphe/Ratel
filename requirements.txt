@@ -12,4 +12,4 @@ pyqt5-tools==5.13.0.1.5
 python-dotenv==0.12.0
 requests==2.23.0
 soupsieve==2.0
-urllib3==1.25.8
+urllib3==1.26.5
